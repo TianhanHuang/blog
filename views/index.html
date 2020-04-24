@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人简历网站</title>
+  <link rel='stylesheet/less' href='../assets/css/main.less'>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../lib/echart.min.js"></script>
+</head>
+
+<body>
+  <div id='root'>
+    <div class='section' id='section1'>
+      <div class='card'>
+        <img src='../assets/images/background-2847037_1280.jpg' />
+        <p><span>Harlan</span>'resume</p>
+      </div>
+      <div class='welcome'>
+        <p>Hello, I'm Harlan</p>
+        <div class='btns'>
+          <div class="basicBox">
+            关于我
+            <svg width="130" height="50" viewBox="0 0 130 50" xmlns="https://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='130' height='50' />
+            </svg>
+          </div>
+          <div class="basicBox">
+            我的作品
+            <svg width="130" height="50" viewBox="0 0 130 50" xmlns="https://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='130' height='50' />
+            </svg>
+          </div>
+          <!-- <button>关于我</button>
+          <button>我的作品</button> -->
+        </div>
+      </div>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+    <div class='section' id='section2'>
+      <div class='navigator'>
+        <div class="container">
+          <div class='my-resume'>Harlan的博客</div>
+          <ul>
+            <li onclick='click_scroll_abountMe("#section2", 0)'>
+              关于我
+            </li>
+            <li onclick='click_scroll_abountMe("#section3", 1)'>
+              求职意向
+            </li>
+            <li  onclick='click_scroll_abountMe("#section4", 2)'>
+              我的作品
+            </li>
+            <li  onclick='click_scroll_abountMe("#section5", 3)'>
+              我的技术
+            </li>
+            <li  onclick='click_scroll_abountMe("#section6", 4)'>
+              我的经历
+            </li>
+            <li  onclick='click_scroll_abountMe("#section7", 5)'>
+              联系我
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='abountMe'>
+        <h2>关于我</h2>
+        <hr>
+        <div class='headImage'>
+          <img src='../assets/images/c26ca909b2eec49f5811a9d161fa2f72.jpg' />
+        </div>
+        <p>牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼</p>
+      </div>
+    </div>
+    <div class='section' id='section3'>
+     <div class='box'>
+        <h2>求职意向</h2>
+        <hr>
+        <ul>
+          <li>
+            <img src='../assets/images/PC.png'>
+            <p>PC端管理后台、企业官网制作</p>
+          </li>
+          <li>
+            <img src='../assets/images/smallminiProgram.png'>
+            <p>
+              利用原生或者uni-app制作微信小程序
+            </p>
+          </li>
+          <li>
+            <img src='../assets/images/weixin.png'>
+            <p>
+              微信公众号页面，以及h5版活动页面
+            </p>
+          </li>
+        </ul>
+     </div>
+    </div>
+    <div class='section' id='section4'>
+      <div class='box'>
+        <h2>我的作品</h2>
+        <hr>
+        <ul>
+          <li>
+            <div class='mask'></div>
+            <div class='content'>
+              <h4>小程序项目</h4>
+              <p>换换衣</p>
+            </div>
+          </li>
+          <li>
+            <div class='mask'></div>
+            <div class='content'>
+              <h4>小程序项目</h4>
+              <p>农联在线</p>
+            </div>
+          </li>
+          <li>
+            <div class='mask'></div>
+            <div class='content'>
+              <h4>小程序项目</h4>
+              <p>悦动七都</p>
+            </div>
+          </li>
+          <li>
+            <div class='mask'></div>
+            <div class='content'>
+              <h4>微信公众号</h4>
+              <p>鹿城七都发布</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='section' id='section5'>
+      <div class='box'>
+        <h2>我的技术</h2>
+        <hr>
+        <div id="main" style="width: 800px;height:600px;"></div>
+      </div>
+    </div>
+    <div class='section' id='section6'>
+      我的经历
+    </div>
+    <div class='section' id='section7'>
+      联系我
+    </div>
+  </div>
+  <script src='../assets/js/index.js'></script>
+</body>
+<!-- <script src='./dist/bundle.js'></script> -->
+
+</html>
